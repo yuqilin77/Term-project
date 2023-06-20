@@ -197,7 +197,7 @@ label {
 }
 
 /* Styles for text input fields and textareas */
-input[type="text_contact"],
+input[type="text"],
 textarea {
     width: 300px;
     padding: 5px;
@@ -365,6 +365,10 @@ div#app2 #ans2:hover {
     transition: transform 0.3s ease-in-out;
 }
 
+#userInput{
+    width: 8%;
+}
+
 /* Media query for screen sizes below or equal to 799px */
 @media screen and (max-width: 799px) {
     body {
@@ -403,7 +407,7 @@ div#app2 #ans2:hover {
         object-fit: cover;
     }
     input[type="text"],
-    input[type="text_contact"],
+ 
     textarea {
         width: 100%;
     }
