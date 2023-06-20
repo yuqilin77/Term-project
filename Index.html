@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="css/main.css">      
     </head>
     <body>
-        <!-- This is the header section with image inserted -->
         <nav>
+             <!-- This is the navigation section linked to other pages using hyperlink which is same as all the pages -->
             <a href="Index.html">Biography</a>
             <a href="Interest.html">Interest</a>
             <a href="Hometown.html">Hometown</a>
@@ -20,15 +20,16 @@
             <a href="Experience.html">Experience</a>
             <a href="Contact.html">Contact</a>    
         </nav>
+        <!-- div with id for Vue instance reference -->
         <div id="app">
-            <!-- Image2 with mouse even and two sources of pictures -->
+            <!-- Image with mouse even and two sources of pictures -->
             <img :src = "adultImage" @mouseover="switchImage" @mouseout="restoreImage" alt="picture">
-            <!-- Label for users' input -->
             <p id="childhoodReminder">(Put your mouse on my profile picture to see my child photo ^-^)</p>
+            <!-- Label for users' input -->
             <label for="userInput">Guess how old was my childhood photo taken?</label> 
             <!-- User input for the check -->
             <input type="text" id="userInput" name="userInput">
-            <!-- Button to trigger check method -->
+            <!-- Click button using Vue to trigger check method -->
             <button v-on:click="checkReply">Guess</button>
             <!-- Display the answer -->
             <p>{{answer}}</p>    
@@ -52,7 +53,7 @@
             </p>
         </div>
         
-         <!-- This is the footer section with the use of special sign "# -->
+         <!-- This is the footer section with link to social media and email drafting -->
         <footer>
             <nav>
             <a href="https://www.linkedin.com/in/linyuqi/" rel="nofollow" target="_blank">Linkedin</a>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <!-- This is the head with title tage and meta tag -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Education</title>
         <link rel="stylesheet" href="css/main.css">
+        <!-- import script from external file -->
         <script src="/js/Education.js"></script>
     </head>
     <body>
-         <!-- This is the main section with tranditional typed lists -->
          <nav> 
+            <!-- This is the navigation section linked to other pages using hyperlink which is same as all the pages -->
             <a href="Index.html">Biography</a>
             <a href="Interest.html">Interest</a>
             <a href="Hometown.html">Hometown</a>
@@ -24,10 +24,9 @@
         <header>
             <h1>My Education</h1>
         </header>
-        <!-- added request button -->
-        <!-- <button id="myButton">Request Degree Data</button> 
          <!-- fetched results shows at the p section  -->
         <p id="degrees"></p>   
+        <!-- extract the input of user selected degree -->
         <p>Check my school by degree:
             <select name="degrees" id='selectedDegree'>
             <option value="None"></option>
@@ -35,8 +34,7 @@
             <option value="Master">Master</option>
             </select>
         </p>
+        <!-- display school names at the p section per user input -->
         <p id="degreesResult"></p>
-
-
   </body>
   </html>

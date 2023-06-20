@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-         <!-- This is the main section with tranditional typed lists -->
          <nav> 
+             <!-- This is the navigation section linked to other pages using hyperlink which is same as all the pages -->
             <a href="Index.html">Biography</a>
             <a href="Interest.html">Interest</a>
             <a href="Hometown.html">Hometown</a>
@@ -20,12 +20,15 @@
             <a href="Experience.html">Experience</a>
             <a href="Contact.html">Contact</a>
         </nav> 
+        <!-- div with id for Vue object reference -->
         <div id='app2' class="hobbywrapper">
             <h1>My Hobby</h1>
+            <!-- apply Vue to iterate all hobbies and display in order -->
             <ul>
             <li v-for="hobby in hobbies">{{hobby}}</li>
             </ul>
             <h2>Click to play my favorite piano music - Croatian Rhapsody</h2>
+            <!-- add music control -->
             <audio src="Croatian Rhapsody.mp3" controls></audio>    
             <h2>Guess: Which ones are my favorite hobbies? Move your mouse on the pictures to get the answer.</h2>
             <!-- Hobby related images inserted -->
@@ -35,7 +38,6 @@
             <img src="images/Travelling.avif.avif" alt="Travel">
         </div>
 
-        <!-- This is the footer with a navigation linked to other pages using hyperlink -->
         <!-- Vue.js library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0/vue.min.js" integrity="sha512-2v91ndX8jAw9J2IAZ4RnH+lKMOi0PzyFJ1i6D69Nx1RlY2UJpy6r1WIo35HrRkHG4ARj1Xl/xyoh0X9ze+6Y2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Customized JS file -->
