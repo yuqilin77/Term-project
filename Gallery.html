@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <!-- This is the head with title tage and meta tag -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+         <!-- This is the main section with tranditional typed lists -->
+         <nav> 
+            <a href="Biography.html">Biography</a>
+            <a href="Interest.html">Interest</a>
+            <a href="Hometown.html">Hometown</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Education.html">Education</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Experience.html">Experience</a>
+            <a href="Contact.html">Contact</a>
+        </nav> 
+        <h1>The cities I visited this year</h1>
+        <div id="app1">
+            <div class="image-container">
+                <!-- Image1 with mouse event and two sources of pictures -->
+                <img :src = "SF2" @mouseover="switchImage_SF" @mouseout="restoreImage_SF" alt="San Francisco">
+                <div class="city-name">San Francisco</div>
+            </div>
+            <div class="image-container">
+                <img :src = "Chicago1" @mouseover="switchImage_Chicago" @mouseout="restoreImage_Chicago" alt="Chicago">
+                <div class="city-name">Chicago</div>
+            </div>
+            <div class="image-container">
+                <img :src = "Yosemite2" @mouseover="switchImage_Yosemite" @mouseout="restoreImage_Yosemite" alt="Yosemite">
+                <div class="city-name">Yosemite</div>
+            </div>
+            <div class="image-container">
+                <img :src = "Hawaii1" @mouseover="switchImage_Hawaii" @mouseout="restoreImage_Hawaii" alt="Hawaii">
+                <div class="city-name">Hawaii</div>
+            </div>
+        </div>
+        <!-- Vue.js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0/vue.min.js" integrity="sha512-2v91ndX8jAw9J2IAZ4RnH+lKMOi0PzyFJ1i6D69Nx1RlY2UJpy6r1WIo35HrRkHG4ARj1Xl/xyoh0X9ze+6Y2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Customized JS file -->
+        <script src="js/Gallery.js"></script>
+        
+  </body>
+  </html>

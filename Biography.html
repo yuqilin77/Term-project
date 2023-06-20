@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <!-- This is the head with title -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biography</title>
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+    <body>
+        <!-- This is the header section with image inserted -->
+        <nav>
+            <a href="Biography.html">Biography</a>
+            <a href="Interest.html">Interest</a>
+            <a href="Hometown.html">Hometown</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Education.html">Education</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Experience.html">Experience</a>
+            <a href="Contact.html">Contact</a>    
+        </nav>
+        <div id="app">
+            <!-- Image2 with mouse even and two sources of pictures -->
+            <img :src = "adultImage" @mouseover="switchImage" @mouseout="restoreImage" alt="picture">
+            <!-- Label for users' input -->
+            <p id="childhoodReminder">(Put your mouse on my profile picture to see my child photo ^-^)</p>
+            <label for="userInput">Guess how old was my childhood photo taken?</label> 
+            <!-- User input for the check -->
+            <input type="text" id="userInput" name="userInput">
+            <!-- Button to trigger check method -->
+            <button v-on:click="checkReply">Guess</button>
+            <!-- Display the answer -->
+            <p>{{answer}}</p>    
+        </div>
+        
+        <!-- This is the main section with text-based content -->
+        <div class="homewrapper">
+            <h1 id="name">Yuqi Lin</h1>
+            <h2>About me</h2>
+            <p>Hello! Welcome to my channel! My name is Yuqi, but you can also call me Yuki. I am delighted to
+                have this opportunity to introduce myself and am honored to be one of the students in course CS 601. </p>
+            <p> I come from China, but I currently reside in San Francisco Bay Area. I have been in U.S. for 8 years. Prior to moving to San Francisco,
+                I lived in New Orleans and Houston. Professionally, I have a background in finance and accounting. I graduated from Tulane University 
+                with Master of Accounting degree. I got my CPA licence two years after I graduated from Tulane. I have been working in the financial 
+                industry for around seven years. I worked at Ernst & Young as an audit senior for over 2 years, and currently, I am working in a hedge 
+                fund investment company as a fund accountant in San Francisco.  </p>
+            <p>In addition to my professional endeavors, I also enjoy coding and learning about software development. Technology is
+             changing our lives, and I am motivated to acquire more IT and software skills to enhance my work efficiency and bring 
+            technology into financial field. While I appreciate back-end development, I have a preference for front-end work because it offers more interactivity. 
+            My goal is to become an accountant who excels in coding and programming skills.
+            </p>
+        </div>
+        
+         <!-- This is the footer section with the use of special sign "# -->
+        <footer>
+            <nav>
+            <a href="https://www.linkedin.com/in/linyuqi/" rel="nofollow" target="_blank">Linkedin</a>
+            <a href="mailto:ylin12@bu.edu">Email me</a>
+            <p id="copy">&copy;2023. Yuqi Lin. Open Source. MIT License</p>
+            </nav>    
+        </footer>
+        <!-- Vue.js library -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0/vue.min.js" integrity="sha512-2v91ndX8jAw9J2IAZ4RnH+lKMOi0PzyFJ1i6D69Nx1RlY2UJpy6r1WIo35HrRkHG4ARj1Xl/xyoh0X9ze+6Y2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Customized JS file -->
+        <script src="js/Biography.js"></script>
+        
+    </body>
+</html>

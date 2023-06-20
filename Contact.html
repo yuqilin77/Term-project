@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <!-- import css and javaScript external files -->
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="js/Contact.js" defer></script>
+    </head>
+    <body id="contact">
+        <!-- This is the main section with tranditional typed lists -->
+        <nav> 
+            <a href="Biography.html">Biography</a>
+            <a href="Interest.html">Interest</a>
+            <a href="Hometown.html">Hometown</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Education.html">Education</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Experience.html">Experience</a>
+            <a href="Contact.html">Contact</a>
+        </nav> 
+        <p3>Please feel free to leave me a message or contact me if you have any question!</p3>
+        <!-- add errormessage container at the top -->
+        <div id="errorMessageContainer"></div>
+        <form id="myForm" action="http://34.125.227.27:8080" method="POST">
+            <!-- setup first name lable and fill-in area -->
+            <label class="Contact_label" for="firstName">Enter your first name (required): </label>
+            <input type="text_contact" id="firstName" name="firstName" required>
+        
+            <!-- setup last name lable and fill-in area -->
+            <label class="Contact_label">Enter your last name (required):</label>
+            <input type="text_contact" id="lastName" name="lastName" required>
+            
+            <!-- setup email address lable and fill-in area -->
+            <label class="Contact_label">Enter your email address (optional):</label>
+            <input type="text_contact" id="email" name="email">
+
+            <!-- setup cell phone lable and fill-in area -->
+            <label class="Contact_label">Enter your cell phone (optional):</label>
+            <input type="text_contact" id="number" name="number">
+
+            <!-- added registered semester question and fill-in area -->
+
+            <label class="Contact_label">Please enter your message</label>
+            <p><textarea rows="5" cols="50" name="comment"></textarea></p>
+
+            <label class="Contact_label">When do you prefer to be replied?</label>
+            <input type="radio" name="weekend" value="weekend" checked>Weekend<br>
+            <input type="radio" name="weekend" value="weekday">Weekday<br>
+    
+             <!-- added the question of communication options and fill-in area -->
+             <label class="Contact_label">How do you like to be replied?</label>
+            <input type="radio" name="contact" value="email" checked>Email<br>
+            <input type="radio" name="contact" value="phone">Phone<br>
+    
+            <!-- added submit button -->
+            <input type="submit" id="click" value="Submit">           
+        </form>   
+    </body>
+</html>
