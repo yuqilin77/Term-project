@@ -10,7 +10,7 @@ The term project is an introduction about me from the aspects of biography, inte
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yuqilin77/Term-project.git>`
+1. Clone the repository: `git clone https://github.com/yuqilin77/Term-project.git`
 
 ## Usage
 
