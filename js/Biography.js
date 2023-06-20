@@ -6,7 +6,7 @@ const app = new Vue({
     data:{
     adultImage: 'images/IMG_8304.JPG',
     childImage: 'images/IMG_3801.JPG',
-    answer: ''
+    answer: '',
 },
 // Define the method for Vue instance
 methods:{
@@ -14,7 +14,7 @@ methods:{
     switchImage(){
         this.adultImage = this.childImage;
     },
-    // Method to restore the image to the inital iamge
+    // Method to restore the image to the adult iamge
     restoreImage(){
         this.adultImage = 'images/IMG_8304.JPG';
     },
@@ -22,10 +22,10 @@ methods:{
     checkReply() {
         const userInput = document.getElementById('userInput').value;
         if (userInput === '2') {
-          this.answer = 'Correct!';
+            this.answer = 'Correct!';
         } else {
-          this.answer = 'Try again!';
+            this.answer = 'Try again!';
         }
-     }
+        }
     }
 });

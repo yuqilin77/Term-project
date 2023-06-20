@@ -14,36 +14,38 @@ const app = new Vue({
     Hawaii2: 'images/Hawaii2.jpg',
 },
 // Define the method for Vue instance
-methods:{
-    // Method to change the current image to the child image
-    switchImage_SF(){
-        this.SF2 = this.SF1;
-    },
-    // Method to restore the image to the inital iamge
-    restoreImage_SF(){
-        this.SF2 = 'images/SF2.JPG';
-    },
-    switchImage_Chicago(){
-        this.Chicago1 = this.Chicago2;
-    },
-    // Method to restore the image to the inital iamge
-    restoreImage_Chicago(){
-        this.Chicago1 = 'images/Chicago1.jpg';
-    },
-    switchImage_Yosemite(){
-        this.Yosemite2 = this.Yosemite1;
-    },
-    // Method to restore the image to the inital iamge
-    restoreImage_Yosemite(){
-        this.Yosemite2 = 'images/Yosemite2.JPG';
-    },
-    switchImage_Hawaii(){
-        this.Hawaii1 = this.Hawaii2;
-    },
-    // Method to restore the image to the inital iamge
-    restoreImage_Hawaii(){
-        this.Hawaii1 = 'images/Hawaii1.JPG';
-    },
-
+    methods:{
+        // Method to change the current image to the another image
+        switchImage_SF(){
+            this.SF2 = this.SF1;
+        },
+        // Method to restore the image to the original iamge
+        restoreImage_SF(){
+            this.SF2 = 'images/SF2.JPG';
+        },
+        // Method to change the current image to the another image   
+        switchImage_Chicago(){
+            this.Chicago1 = this.Chicago2;
+        },
+        // Method to restore the image to the original iamge
+        restoreImage_Chicago(){
+            this.Chicago1 = 'images/Chicago1.jpg';
+        },
+            // Method to change the current image to the another image
+        switchImage_Yosemite(){
+            this.Yosemite2 = this.Yosemite1;
+        },
+        // Method to restore the image to the original iamge
+        restoreImage_Yosemite(){
+            this.Yosemite2 = 'images/Yosemite2.JPG';
+        },
+            // Method to change the current image to the another image
+        switchImage_Hawaii(){
+            this.Hawaii1 = this.Hawaii2;
+        },
+        // Method to restore the image to the original iamge
+        restoreImage_Hawaii(){
+            this.Hawaii1 = 'images/Hawaii1.JPG';
+        },
     }
 });
