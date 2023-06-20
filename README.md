@@ -14,12 +14,11 @@ The term project is an introduction about me from the aspects of biography, inte
 
 ## Usage
 
-1. Navigate to the project directory: `cd Term-project`
-2. Click `<> Code`
-3. Click `Download ZIP` download the zip file and save at a local folder
-4. Unzip the folder and open with VS code
+1. Open the folder `Term-project` with VS code
+2. Make sure you installed `Live Preview` from Extensions in VS code
+3. Open your browser and visit `http://127.0.0.1:3000/index.html` to view the application.
 
-For navigation purpose - open following link in the browser directly
+For navigation purpose - open the following link in the browser directly
 `https://celadon-taffy-7dfb24.netlify.app/`
 
 ## Technologies Used
